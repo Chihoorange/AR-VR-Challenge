@@ -19,6 +19,19 @@
           <img id="orange7" src="images/orange7.png" />
       </a-assets>
 
+      <!-- cursor -->
+       <a-camera>
+        <a-entity id="mouseCursor"
+          cursor="fuse: true; fuseTimeout: 3000">
+        </a-entity>
+        <a-ring id="cursorRing" 
+          position="0 4 -1"
+          radius-inner= "0.02"
+          radius-outer= "0.03"
+          material="color: white; shader: flat">
+        </a-ring>
+      </a-camera>
+
       <!-- center -->
       <a-plane src="#orange1" height="3" width="3" rotation="0 0 0" position="0 1 -10"
       animation="property: position; to:0 2.5 -10: delay: 0; dur:3000; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
@@ -38,6 +51,12 @@
       animation="property: rotation; to:0 15 0: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
       <a-plane src="#orange7" height="3" width="3" rotation="0 60 0" position="-12 2 -3"
       animation="property: rotation; to:0 30 0: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
+
+      <!-- recommended -->
+      <a-plane color="7BC8A4" scale="10 5 1" rotation="0 -15 0" position="7 9 -12"
+      animation="property: position; to 7 8.5 -12; delay: :0; dur: 3000; dir: alternate; loop: true; easing: easeInOutQuad"></a-plane>
+      <a-plane color="7BC8A4" scale="10 5 1" rotation="0 15 0" position="-7 9 -12"
+      animation="property: position; to -7 8.5 -12; delay: :0; dur: 3000; dir: alternate; loop: true; easing: easeInOutQuad"></a-plane>
 
       <!-- <a-plane color="#7BC8A4" src="#orange1" height="100" width="100" rotation="-90 0 0"></a-plane> --> // put image later
 <!--       <a-plane color="#303030" height="100" width="100" rotation="-90 0 0"></a-plane>
