@@ -1,14 +1,26 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <title>Inspi VR</title>
+    <meta name="viewport" content="width=device-width">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="scripts/main.js" defer></script>
   </head>
   <body>
     <a-scene>
+      <a-assets>
+          <img id="orange1" src="images/orange1.png" />
+          <img id="orange2" src="images/orange2.png" />
+          <img id="orange3" src="images/orange3.png" />
+      </a-assets>
+      <a-plane src="#orange1" height="100" width="100" rotation="-90 0 0"></a-plane>
+<!--       <a-plane color="#303030" height="100" width="100" rotation="-90 0 0"></a-plane>
       <a-entity geometry="primitive: box" material="color: red"></a-entity>
       <a-ring color="teal" radius-inner="1.8" radius-outer="2"></a-ring>
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="1" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
       <a-sky color="#0C1023"></a-sky>
     </a-scene>
   </body>
