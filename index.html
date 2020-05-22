@@ -36,41 +36,53 @@
       <a-sky color="orange"></a-sky>
 
       <!-- center -->
-      <a-entity>
+      <a-entity id="mainPic1">
         <a-plane src="#orange1" height="3" width="3" rotation="0 0 0" position="0 1 -10"
         animation="property: position; to:0 2.5 -10: delay: 0; dur:3000; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
       </a-entity>
       
       <!-- right side -->
-      <a-entity>
+      <a-entity id="rightPic1">
         <a-plane src="#orange2" height="4" width="3.5" rotation="0 -15 0" position="5.5 2.2 -9"
         animation="property: rotation; to:0 0 0: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
       </a-entity>
 
-      <a-entity>
+      <a-entity id="rightPic2">
         <a-plane src="#orange3" height="3" width="3" rotation="0 -30 0" position="9 2 -6"
         animation="property: rotation; to:0 -15 0: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
       </a-entity>
 
-      <a-entity>
+      <a-entity id="rightPic3">
         <a-plane src="#orange4" height="3" width="3" rotation="0 -60 0" position="12 2 -3"
         animation="property: rotation; to:0 -30 0: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
       </a-entity>
       
       <!-- left side -->
-      <a-plane src="#orange5" height="4" width="3.5" rotation="0 15 0" position="-5.5 2.2 -9"
-      animation="property: rotation; to:0 0 0: delay: 200; dur:3000; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
-      <a-plane src="#orange6" height="3" width="3" rotation="0 30 0" position="-9 2 -6" 
-      animation="property: rotation; to:0 15 0: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
-      <a-plane src="#orange7" height="3" width="3" rotation="0 60 0" position="-12 2 -3"
-      animation="property: rotation; to:0 30 0: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
+      <a-entity id="leftPic1">
+        <a-plane src="#orange5" height="4" width="3.5" rotation="0 15 0" position="-5.5 2.2 -9"
+        animation="property: rotation; to:0 0 0: delay: 200; dur:3000; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
+      </a-entity>
+
+      <a-entity id="leftPic2">
+        <a-plane src="#orange6" height="3" width="3" rotation="0 30 0" position="-9 2 -6" 
+        animation="property: rotation; to:0 15 0: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
+      </a-entity>
+
+      <a-entity id="leftPic3">
+        <a-plane src="#orange7" height="3" width="3" rotation="0 60 0" position="-12 2 -3"
+        animation="property: rotation; to:0 30 0: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
+      </a-entity>
 
       <!-- recommended -->
-      <a-plane color="7BC8A4" scale="10 5 1" rotation="0 -15 0" position="7 9 -12"
-      animation="property: position; to 7 8.5 -12; delay: :0; dur: 3000; dir: alternate; loop: true; easing: easeInOutQuad"></a-plane>
-      <a-plane color="7BC8A4" scale="10 5 1" rotation="0 15 0" position="-7 9 -12"
-      animation="property: position; to -7 8.5 -12; delay: :0; dur: 3000; dir: alternate; loop: true; easing: easeInOutQuad"></a-plane>
+      <a-entity id="recommendedLeft">
+        <a-plane color="7BC8A4" scale="10 5 1" rotation="0 -15 0" position="7 9 -12"
+        animation="property: position; to 7 8.5 -12; delay: :0; dur: 3000; dir: alternate; loop: true; easing: easeInOutQuad"></a-plane>
+      </a-entity>
 
+      <a-entity id="recommendedRight">
+        <a-plane color="7BC8A4" scale="10 5 1" rotation="0 15 0" position="-7 9 -12"
+        animation="property: position; to -7 8.5 -12; delay: :0; dur: 3000; dir: alternate; loop: true; easing: easeInOutQuad"></a-plane>
+      </a-entity>
       <!-- <a-plane color="#7BC8A4" src="#orange1" height="100" width="100" rotation="-90 0 0"></a-plane> --> // put image later
 <!--       <a-plane color="#303030" height="100" width="100" rotation="-90 0 0"></a-plane>
       <a-entity geometry="primitive: box" material="color: red"></a-entity>
@@ -78,7 +90,6 @@
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="1" height="1.5" color="#FFC65D"></a-cylinder>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
-      <a-sky color="#0C1023"></a-sky>
     </a-scene>
   </body>
 </html>
