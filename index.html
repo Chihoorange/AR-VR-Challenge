@@ -39,61 +39,129 @@
       <!-- sky - background -->
       <a-entity>
         <a-sky id="orangeSky" color="orange"
-        animation__fadein="startEvents: fadein; property: material.opacity; from: 0; to: 1; dur: 500; delay: 0;"
-        animation__fadeout="startEvents: fadeout; property: material.opacity; from: 1; to: 0; dur: 500;"></a-sky>
+          animation__fadein="
+          startEvents: fadein;
+          property: material.opacity;
+          from: 0; 
+          to: 1; 
+          dur: 500; 
+          delay: 0;"
+          animation__fadeout="
+          startEvents: fadeout;
+          property: material.opacity;
+          from: 1; 
+          to: 0; 
+          dur: 500;">
+        </a-sky>
       </a-entity>
 
       <!-- center -->
       <a-entity id="mainPic1">
         <a-plane src="#orange1" height="3" width="3" rotation="0 0 0" position="0 1 -10"
-        animation="property: position; to:0 2.5 -10: delay: 0; dur:3000; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
+          animation="
+          property: position; 
+          to:0 2.5 -10: delay: 0;
+           dur:3000; 
+           dir:alternate; 
+           loop: true; 
+           easing: easeInOutQuad">
+         </a-plane>
       </a-entity>
       
       <!-- right side -->
       <a-entity id="rightPic1">
         <a-plane src="#orange2" height="4" width="3.5" rotation="0 -15 0" position="5.5 2.2 -9"
-        animation="property: rotation; to:0 0 0: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
+          animation="
+          property: rotation;
+          to:0 0 0: delay: 500; 
+          dur:3500; dir:alternate; 
+          loop: true; 
+          easing: easeInOutQuad">
+        </a-plane>
       </a-entity>
 
       <a-entity id="rightPic2">
         <a-plane src="#orange3" height="3" width="3" rotation="0 -30 0" position="9 2 -6"
-        animation="property: rotation; to:0 -15 0: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
+          animation="
+          property: rotation; 
+          to:0 -15 0: 
+          delay: 500; 
+          dur:3500; dir:alternate; 
+          loop: true; easing: 
+          easeInOutQuad">
+        </a-plane>
       </a-entity>
 
       <a-entity id="rightPic3">
         <a-plane src="#orange4" height="3" width="3" rotation="0 -60 0" position="12 2 -3"
-        animation="property: rotation; to:0 -30 0: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
+          animation="
+          property: rotation; 
+          to:0 -30 0; 
+          delay: 500; 
+          dur:3500; 
+          dir:alternate; 
+          loop: true; 
+          easing: easeInOutQuad">
+        </a-plane>
       </a-entity>
       
       <!-- left side -->
       <a-entity id="leftPic1">
         <a-plane src="#orange5" height="4" width="3.5" rotation="0 15 0" position="-5.5 2.2 -9"
-        animation="property: rotation; to:0 0 0: delay: 200; dur:3000; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
+          animation="
+          property: rotation; 
+          to:0 0 0; 
+          delay: 200; 
+          dur:3000; 
+          dir:alternate; 
+          loop: true; 
+          easing: easeInOutQuad">
+        </a-plane>
       </a-entity>
 
       <a-entity id="leftPic2">
         <a-plane src="#orange6" height="3" width="3" rotation="0 30 0" position="-9 2 -6" 
-        animation="property: rotation; to:0 15 0: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
+          animation="
+          property: rotation; 
+          to:0 15 0; 
+          delay: 500; 
+          dur:3500; 
+          dir:alternate; 
+          loop: true; 
+          easing: easeInOutQuad">  
+        </a-plane>
       </a-entity>
 
       <a-entity id="leftPic3">
         <a-plane src="#orange7" height="3" width="3" rotation="0 60 0" position="-12 2 -3"
-        animation="property: rotation; to:0 30 0: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
+          animation="
+          property: rotation; 
+          to:0 30 0: 
+          delay: 500; 
+          dur:3500;
+          dir:alternate; 
+          loop: true; 
+          easing: easeInOutQuad">
+        </a-plane>
       </a-entity>
 
       <!-- recommended -->
       <a-entity id="recommendedRight">
         <a-plane src="#blue1" scale="10 5 1" rotation="0 -15 0" position="7 9 -12" set-sky="#blue1"
-        animation="property: position; to:7 8.5 -12: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"
-        animation__mouseenter="
+          animation="property: position; to:7 8.5 -12: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"
+          animation__mouseenter="
           property: components.material.material.color; 
           type: color;
           color: blue;
           startEvents: mouseenter; 
           dur: 500;"
-        animation__mouseleave="
+          animation__mouseleave="
           property: components.material.material.color; 
-          src= #blue1;
+          type: color;
+          color: blue;
+          property: material.opacity;
+          from: 1; 
+          to: 0;
           startEvents: mouseleave; 
           dur: 500;">
         </a-plane>
