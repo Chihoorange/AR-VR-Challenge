@@ -27,6 +27,23 @@
        <a-camera>
         <a-entity id="mouseCursor"
           cursor="fuse: true; fuseTimeout: 3000">
+            <a-animation 
+            begin="click"
+            easing="ease-in"
+            attribute="scale"
+            fill="forwards"
+            from="0.2 0.2 0.2"
+            to="1 1 1" dur="150">
+            </a-animation>
+            <a-animation
+            begin="fusing"
+            easing="ease-in"
+            attribute="scale"
+            fill="backwards"
+            from="1 1 1"
+            to="0.2 0.2 0.2"
+            dur="1500">
+            </a-animation>
         </a-entity>
         <a-ring id="cursorRing" 
           position="0 0 -2"
@@ -151,17 +168,11 @@
           animation="property: position; to:7 8.5 -12: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"
           animation__mouseenter="
           property: components.material.material.color; 
-          type: color;
-          color: blue;
           startEvents: mouseenter; 
           dur: 500;"
           animation__mouseleave="
           property: components.material.material.color; 
           type: color;
-          color: blue;
-          property: material.opacity;
-          from: 1; 
-          to: 0;
           startEvents: mouseleave; 
           dur: 500;">
         </a-plane>
