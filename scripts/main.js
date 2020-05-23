@@ -9,6 +9,16 @@ var imageSets = {
 		img6: '#blue6',
 		img7: '#blue7'
 	},
+
+	orange: {
+		img1: '#orange1',
+		img2: '#orange2',
+		img3: '#orange3',
+		img4: '#orange4',
+		img5: '#orange5',
+		img6: '#orange6',
+		img7: '#orange7'
+	}
 	white: {
 		img1: '#white1',
 		img2: '#white2',
