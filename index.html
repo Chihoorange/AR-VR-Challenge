@@ -19,9 +19,25 @@
           <img id="orange6" src="images/orange6.png" />
           <img id="orange7" src="images/orange7.png" />
 
+          <img id="blue0" src="images/blue0.png" />
           <img id="blue1" src="images/blue1.png" />
+          <img id="blue2" src="images/blue2.png" />
+          <img id="blue3" src="images/blue3.png" />
+          <img id="blue4" src="images/blue4.png" />
+          <img id="blue5" src="images/blue5.png" />
+          <img id="blue6" src="images/blue6.png" />
+          <img id="blue7" src="images/blue7.png" />
 
+          <img id="white0" src="images/white0.png" />
           <img id="white1" src="images/white1.png" />
+          <img id="white2" src="images/white2.png" />
+          <img id="white3" src="images/white3.png" />
+          <img id="white4" src="images/white4.png" />
+          <img id="white5" src="images/white5.png" />
+          <img id="white6" src="images/white6.png" />
+          <img id="white7" src="images/white7.png" />
+
+          
       </a-assets>
 
       <!-- cursor -->
@@ -66,8 +82,8 @@
       </a-entity>
 
       <!-- main picture -->
-      <a-entity id="mainPic1">
-        <a-plane src="#orange1" height="3" width="3" rotation="0 0 0" position="0 1 -10"
+      <a-entity>
+        <a-plane id="mainPic1" src="#orange1" height="3" width="3" rotation="0 0 0" position="0 1 -10"
           animation="
           property: position; 
           to:0 2.5 -10;
@@ -230,7 +246,7 @@
 
       <!-- recommended -->
       <a-entity id="recommendedRight">
-        <a-plane src="#blue1" height="4.5" width="8" rotation="0 -15 0" position="7 9 -12" set-sky="blue"
+        <a-plane src="#blue0" height="4.5" width="8" rotation="0 -15 0" position="7 9 -12" set-color="blue"
           animation="property: position; to:7 8.5 -12: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"
           animation__mouseenter="
           startEvents: mouseenter;
@@ -246,8 +262,18 @@
       </a-entity>
 
       <a-entity id="recommendedLeft">
-        <a-plane src="#white1" height="4.5" width="8" rotation="0 15 0" position="-7 8.5 -12"
-        animation="property: position; to:-7 9 -12: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"></a-plane>
+        <a-plane src="#white0" height="4.5" width="8" rotation="0 15 0" position="-7 8.5 -12" set-color="white"
+        animation="property: position; to:-7 9 -12: delay: 500; dur:3500; dir:alternate; loop: true; easing: easeInOutQuad"
+          animation__mouseenter="
+          startEvents: mouseenter;
+          property: scale;
+          to: 1.2 1.2 1.2;
+          dur: 1000"
+          animation__mouseleave="
+          startEvents: mouseleave;
+          property: scale;
+          to: 1 1 1;
+          dur: 1000;">></a-plane>
       </a-entity>
     </a-scene>
   </body>

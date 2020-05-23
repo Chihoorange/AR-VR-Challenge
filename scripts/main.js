@@ -1,5 +1,26 @@
 
-AFRAME.registerComponent('set-sky', {
+var imageSets = {
+	blue: {
+		img1: '#blue1'
+		img2: '#blue2'
+		img3: '#blue3'
+		img4: '#blue4'
+		img5: '#blue5'
+		img6: '#blue6'
+		img7: '#blue7'
+	},
+	white: {
+		img1: '#white1'
+		img2: '#white2'
+		img3: '#white3'
+		img4: '#white4'
+		img5: '#white5'
+		img6: '#white6'
+		img7: '#white7'
+	}
+}
+
+AFRAME.registerComponent('set-color', {
   schema: {default:''},
 
   init: function () {
@@ -11,6 +32,7 @@ AFRAME.registerComponent('set-sky', {
 
         setTimeout(function () {
           sky.setAttribute('color', color);
+          // document.querySelector('#mainPic1').setAttribute('src', imageSets[color].img1)
         }, 1000);
         
         setTimeout(function () {
