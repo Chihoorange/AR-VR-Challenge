@@ -32,13 +32,13 @@ AFRAME.registerComponent('set-color', {
 
         setTimeout(function () {
           sky.setAttribute('color', color);
-          document.querySelector('#mainPic1').setAttribute('src', imageSets[color].img1),
-          document.querySelector('#rightPic1').setAttribute('src', imageSets[color].img2),
-          document.querySelector('#rightPic2').setAttribute('src', imageSets[color].img3),
-          document.querySelector('#rightPic3').setAttribute('src', imageSets[color].img4),
-          document.querySelector('#leftPic1').setAttribute('src', imageSets[color].img5),
-          document.querySelector('#leftPic2').setAttribute('src', imageSets[color].img6),
-          document.querySelector('#leftPic3').setAttribute('src', imageSets[color].img7)
+          document.querySelector('#mainPic1').setAttribute('src', imageSets[color].img1);
+          document.querySelector('#rightPic1').setAttribute('src', imageSets[color].img2);
+          document.querySelector('#rightPic2').setAttribute('src', imageSets[color].img3);
+          document.querySelector('#rightPic3').setAttribute('src', imageSets[color].img4);
+          document.querySelector('#leftPic1').setAttribute('src', imageSets[color].img5);
+          document.querySelector('#leftPic2').setAttribute('src', imageSets[color].img6);
+          document.querySelector('#leftPic3').setAttribute('src', imageSets[color].img7);
 
         }, 1000);
         
