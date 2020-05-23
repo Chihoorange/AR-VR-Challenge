@@ -11,6 +11,10 @@
   <body>
     <a-scene>
       <a-assets>
+          <img id="sky-orange" src="images/sky-orange.png" />
+          <img id="sky-blue" src="images/sky-blue.png" />
+          <img id="sky-white" src="images/sly-white.png" />
+
           <img id="orange0" src="images/orange0.png" />
           <img id="orange1" src="images/orange1.png" />
           <img id="orange2" src="images/orange2.png" />
@@ -65,7 +69,7 @@
           position="0 3.5 -5"
           style="font-family: 'Lobster', cursive;">
         </a-entity>
-        <a-sky id="orangeSky" color="orange"
+        <a-sky id="orangeSky" radius="50" src="sky-orange"
           animation__fadein="
           startEvents: fadein;
           property: material.opacity;
