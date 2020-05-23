@@ -1,6 +1,7 @@
 
 var imageSets = {
 	blue: {
+		sky: '#sky-blue',
 		img1: '#blue1',
 		img2: '#blue2',
 		img3: '#blue3',
@@ -11,6 +12,7 @@ var imageSets = {
 	},
 
 	orange: {
+		sky: '#sky-orange',
 		img1: '#orange1',
 		img2: '#orange2',
 		img3: '#orange3',
@@ -20,6 +22,7 @@ var imageSets = {
 		img7: '#orange7'
 	},
 	white: {
+		sky: '#sky-white',
 		img1: '#white1',
 		img2: '#white2',
 		img3: '#white3',
@@ -41,7 +44,7 @@ AFRAME.registerComponent('set-color', {
         sky.emit('fadeout');
 
         setTimeout(function () {
-          sky.setAttribute('color', color);
+          sky.setAttribute('src', imageSets[color].sky);
           document.querySelector('#mainPic1').setAttribute('src', imageSets[color].img1);
           document.querySelector('#rightPic1').setAttribute('src', imageSets[color].img2);
           document.querySelector('#rightPic2').setAttribute('src', imageSets[color].img3);
