@@ -18,7 +18,7 @@ var imageSets = {
 		img5: '#orange5',
 		img6: '#orange6',
 		img7: '#orange7'
-	}
+	},
 	white: {
 		img1: '#white1',
 		img2: '#white2',
